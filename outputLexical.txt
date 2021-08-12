@@ -1,0 +1,6 @@
+TOKENS	          		Lexemes
+IDENTIFIER	     	=		ID
+OPERATOR	     	=		=
+IDENTIFIER	     	=		ID
+OPERATOR	     	=		-
+IDENTIFIER	     	=		ID

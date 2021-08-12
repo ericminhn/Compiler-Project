@@ -1,0 +1,17 @@
+Token: ID   Lexeme: IDENTIFIER
+S -> A
+A -> ID = E
+Token: =   Lexeme: OPERATOR
+Token: ID   Lexeme: IDENTIFIER
+E -> TE'
+T -> FT'
+F -> ID
+Token: -   Lexeme: OPERATOR
+E' / T' -> epsilon
+E' -> -TE'
+Token: ID   Lexeme: IDENTIFIER
+T -> FT'
+F -> ID
+Token: $   Lexeme: ENDPARSER
+E' / T' -> epsilon
+E' / T' -> epsilon
