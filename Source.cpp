@@ -234,7 +234,6 @@ int main()
 	cout << "2: Subtract test case" << endl;
 	cout << "3: Multiply test case" << endl;
 	cout << "4: Divide test case" << endl;
-	cout << "5: Custom test case" << endl;
 	cout << "Please enter your choice: ";
 	cin >> choice;
 	cout << endl << endl;
@@ -257,18 +256,6 @@ int main()
 	else if (choice == 4)
 	{
 		filename = "testCaseD.txt";
-		file.open(filename.c_str());
-	}
-	else if (choice == 5)
-	{
-		cout << "Please write a line of code: ";
-		file.open("testCaseCustom.txt", ios::out | ios::trunc);
-		getline(cin, custom);
-		getline(cin, custom);
-		file << custom;
-		cout << endl << endl;
-		file.close();
-		filename = "testCaseCustom.txt";
 		file.open(filename.c_str());
 	}
 	else
